@@ -1,0 +1,6 @@
+[submodule "submodules/pvpoke"]
+	path = submodules/pvpoke
+	url = https://github.com/pvpoke/pvpoke.git
+[submodule "submodules/dialgadex"]
+	path = submodules/dialgadex
+	url = https://github.com/mgrann03/dialgadex.git

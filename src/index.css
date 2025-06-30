@@ -55,4 +55,685 @@
   .type-dark { @apply bg-gray-800 text-white; }
   .type-steel { @apply bg-gray-500 text-white; }
   .type-fairy { @apply bg-pink-300 text-black; }
+  
+  /* Pokemon sprite pixelated rendering */
+  .pixelated {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+  }
+
+  /* Comprehensive Analysis Page Styles */
+  .comprehensive-analysis-page {
+    @apply w-full max-w-full;
+  }
+
+  .page-header {
+    @apply bg-white rounded-lg shadow-md p-6 mb-6 flex justify-between items-start;
+  }
+
+  .header-content h1 {
+    @apply text-3xl font-bold text-gray-900 mb-2;
+  }
+
+  .page-description {
+    @apply text-gray-600 text-lg max-w-4xl;
+  }
+
+  .settings-btn {
+    @apply bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-lg transition-colors flex items-center gap-2;
+  }
+
+  .features-overview {
+    @apply mb-6;
+  }
+
+  .feature-cards {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4;
+  }
+
+  .feature-card {
+    @apply bg-white rounded-lg shadow-md p-4 border-l-4 border-blue-500;
+  }
+
+  .feature-card h3 {
+    @apply text-lg font-semibold text-gray-900 mb-2;
+  }
+
+  .feature-card p {
+    @apply text-sm text-gray-600;
+  }
+
+  .usage-instructions {
+    @apply bg-white rounded-lg shadow-md mb-6;
+  }
+
+  .usage-instructions summary {
+    @apply p-4 cursor-pointer text-lg font-semibold text-gray-900 hover:bg-gray-50 rounded-lg;
+  }
+
+  .instructions-content {
+    @apply p-4 pt-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4;
+  }
+
+  .instruction-section h4 {
+    @apply font-semibold text-gray-900 mb-2;
+  }
+
+  .instruction-section ul {
+    @apply list-disc list-inside text-sm text-gray-600 space-y-1;
+  }
+
+  /* Pokemon Analysis Table Styles */
+  .pokemon-analysis-table {
+    @apply bg-white rounded-lg shadow-md overflow-hidden;
+  }
+
+  .table-controls {
+    @apply p-4 border-b border-gray-200 flex flex-wrap items-center justify-between gap-4;
+  }
+
+  .search-and-filters {
+    @apply flex items-center gap-4;
+  }
+
+  .search-input {
+    @apply px-4 py-2 border border-gray-300 rounded-lg w-64 focus:outline-none focus:ring-2 focus:ring-blue-500;
+  }
+
+  .league-select {
+    @apply px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500;
+  }
+
+  .sort-controls {
+    @apply flex items-center gap-2;
+  }
+
+  .sort-select {
+    @apply px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500;
+  }
+
+  .sort-order-btn {
+    @apply px-3 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors;
+  }
+
+  .type-filters {
+    @apply p-4 border-b border-gray-200 flex flex-wrap gap-2;
+  }
+
+  .type-filter-chip {
+    @apply px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-full text-sm font-medium transition-colors flex items-center gap-1;
+  }
+
+  .type-filter-chip.active {
+    @apply bg-blue-500 text-white hover:bg-blue-600;
+  }
+
+  .clear-filters-btn {
+    @apply px-3 py-1 bg-red-100 hover:bg-red-200 text-red-700 rounded-full text-sm font-medium transition-colors;
+  }
+
+  .results-info {
+    @apply px-4 py-2 text-sm text-gray-600 border-b border-gray-200;
+  }
+
+  .table-container {
+    @apply overflow-x-auto;
+  }
+
+  .analysis-table {
+    @apply w-full min-w-full;
+  }
+
+  .analysis-table th {
+    @apply px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider bg-gray-50 border-b border-gray-200;
+  }
+
+  .analysis-table th.sortable {
+    @apply cursor-pointer hover:bg-gray-100 select-none;
+  }
+
+  .analysis-table td {
+    @apply px-4 py-3 whitespace-nowrap text-sm text-gray-900 border-b border-gray-200;
+  }
+
+  .pokemon-row {
+    @apply hover:bg-gray-50 transition-colors;
+  }
+
+  .expand-btn {
+    @apply text-gray-400 hover:text-gray-600 p-1 rounded;
+  }
+
+  .pokemon-cell {
+    @apply flex items-center gap-3;
+  }
+
+  .dex-number {
+    @apply text-xs text-gray-500 font-mono;
+  }
+
+  .pokemon-name {
+    @apply font-medium cursor-pointer hover:text-blue-600;
+  }
+
+  .types-cell {
+    @apply flex gap-1;
+  }
+
+  .stats-cell {
+    @apply text-center;
+  }
+
+  .stat-total {
+    @apply font-semibold cursor-pointer hover:text-blue-600;
+  }
+
+  .pvp-rank-cell {
+    @apply text-center;
+  }
+
+  .rank {
+    @apply font-semibold;
+  }
+
+  .rank.top-tier {
+    @apply text-red-600;
+  }
+
+  .rank.high-tier {
+    @apply text-orange-600;
+  }
+
+  .no-rank {
+    @apply text-gray-400;
+  }
+
+  .moveset-display {
+    @apply text-xs;
+  }
+
+  .fast-move {
+    @apply font-semibold text-gray-900;
+  }
+
+  .charged-moves {
+    @apply text-gray-600;
+  }
+
+  .raid-tier-display {
+    @apply flex items-center gap-2;
+  }
+
+  .best-raid-moveset {
+    @apply text-xs;
+  }
+
+  .vs-type {
+    @apply flex items-center gap-1 text-gray-600;
+  }
+
+  .dps {
+    @apply font-semibold;
+  }
+
+  .evolution-info {
+    @apply flex items-center gap-2;
+  }
+
+  .evolution-stage {
+    @apply text-xs bg-gray-100 px-2 py-1 rounded;
+  }
+
+  .can-evolve {
+    @apply text-yellow-500;
+  }
+
+  .expanded-row {
+    @apply bg-gray-50;
+  }
+
+  .expanded-content {
+    @apply p-4;
+  }
+
+  .detailed-analysis {
+    @apply space-y-4;
+  }
+
+  .raid-analysis-section h4 {
+    @apply font-semibold text-gray-900 mb-2;
+  }
+
+  .type-analysis-grid {
+    @apply grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-2;
+  }
+
+  .type-analysis-item {
+    @apply flex flex-col items-center gap-1 p-2 bg-white rounded border;
+  }
+
+  .dps-value {
+    @apply text-xs font-semibold;
+  }
+
+  .moves-section h4 {
+    @apply font-semibold text-gray-900 mb-2;
+  }
+
+  .moves-display {
+    @apply space-y-1 text-sm;
+  }
+
+  /* Type Icon Styles */
+  .type-icon {
+    @apply inline-block text-white font-bold text-center rounded-full border-2 border-white;
+  }
+
+  .type-icon-small {
+    @apply w-5 h-5 text-xs leading-none flex items-center justify-center;
+  }
+
+  .type-icon-medium {
+    @apply w-8 h-8 text-xs leading-none flex items-center justify-center;
+  }
+
+  .type-icon-large {
+    @apply w-12 h-12 text-sm leading-none flex items-center justify-center;
+  }
+
+  /* Tier Badge Styles */
+  .tier-badge {
+    @apply font-bold inline-flex items-center justify-center;
+  }
+
+  .tier-badge-small {
+    @apply text-xs;
+  }
+
+  .tier-badge-medium {
+    @apply text-sm;
+  }
+
+  .tier-badge-large {
+    @apply text-base;
+  }
+
+  /* Column Manager Styles */
+  .column-manager {
+    @apply relative;
+  }
+
+  .column-manager-toggle {
+    @apply px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors text-sm font-medium;
+  }
+
+  .column-manager-dropdown {
+    @apply absolute right-0 top-full mt-2 w-80 bg-white rounded-lg shadow-lg border border-gray-200 z-50;
+  }
+
+  .column-manager-header {
+    @apply flex justify-between items-center p-4 border-b border-gray-200;
+  }
+
+  .column-manager-header h4 {
+    @apply font-semibold text-gray-900;
+  }
+
+  .close-btn {
+    @apply text-gray-400 hover:text-gray-600 p-1;
+  }
+
+  .column-manager-actions {
+    @apply p-4 border-b border-gray-200 flex gap-2;
+  }
+
+  .action-btn {
+    @apply px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded text-sm transition-colors;
+  }
+
+  .column-manager-presets {
+    @apply p-4 border-b border-gray-200;
+  }
+
+  .column-manager-presets h5 {
+    @apply font-medium text-gray-900 mb-2;
+  }
+
+  .preset-buttons {
+    @apply grid grid-cols-2 gap-2;
+  }
+
+  .preset-btn {
+    @apply px-3 py-2 bg-blue-50 hover:bg-blue-100 text-blue-700 rounded text-xs transition-colors;
+  }
+
+  .column-manager-list {
+    @apply p-4 max-h-60 overflow-y-auto;
+  }
+
+  .column-manager-list h5 {
+    @apply font-medium text-gray-900 mb-2;
+  }
+
+  .column-toggle {
+    @apply flex items-start gap-2 p-2 hover:bg-gray-50 rounded cursor-pointer;
+  }
+
+  .column-label {
+    @apply font-medium text-gray-900;
+  }
+
+  .column-description {
+    @apply text-xs text-gray-500 block;
+  }
+
+  .column-manager-info {
+    @apply p-4 text-xs text-gray-500 border-t border-gray-200;
+  }
+
+  /* Settings Modal Styles */
+  .settings-modal-overlay {
+    @apply fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50;
+  }
+
+  .settings-modal {
+    @apply bg-white rounded-lg shadow-xl w-full max-w-md mx-4;
+  }
+
+  .modal-header {
+    @apply flex justify-between items-center p-6 border-b border-gray-200;
+  }
+
+  .modal-header h3 {
+    @apply text-lg font-semibold text-gray-900;
+  }
+
+  .settings-content {
+    @apply p-6 space-y-4;
+  }
+
+  .setting-group {
+    @apply space-y-2;
+  }
+
+  .setting-group label {
+    @apply block text-sm font-medium text-gray-700;
+  }
+
+  .setting-group select {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500;
+  }
+
+  .setting-group input[type="checkbox"] {
+    @apply mr-2;
+  }
+
+  .setting-group small {
+    @apply text-xs text-gray-500;
+  }
+
+  .modal-actions {
+    @apply p-6 border-t border-gray-200 flex justify-between;
+  }
+
+  .reset-btn {
+    @apply px-4 py-2 text-gray-600 hover:text-gray-800 transition-colors;
+  }
+
+  .apply-btn {
+    @apply px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .table-controls {
+      @apply flex-col items-stretch gap-2;
+    }
+
+    .search-and-filters {
+      @apply flex-col gap-2;
+    }
+
+    .search-input {
+      @apply w-full;
+    }
+
+    .type-filters {
+      @apply justify-center;
+    }
+
+    .analysis-table {
+      @apply text-xs;
+    }
+
+    .analysis-table th,
+    .analysis-table td {
+      @apply px-2 py-2;
+    }
+
+    .feature-cards {
+      @apply grid-cols-1;
+    }
+
+    .instructions-content {
+      @apply grid-cols-1;
+    }
+
+    .type-analysis-grid {
+      @apply grid-cols-2 md:grid-cols-3;
+    }
+  }
+
+  /* Theme Support */
+  .dark {
+    @apply bg-gray-900 text-white;
+  }
+
+  .dark .pokemon-analysis-table,
+  .dark .page-header,
+  .dark .feature-card,
+  .dark .usage-instructions {
+    @apply bg-gray-800 text-white;
+  }
+
+  .dark .analysis-table th {
+    @apply bg-gray-700 text-gray-300;
+  }
+
+  .dark .pokemon-row:hover {
+    @apply bg-gray-700;
+  }
+
+  .dark .expanded-row {
+    @apply bg-gray-700;
+  }
+
+  .compact {
+    @apply text-sm;
+  }
+
+  .compact .analysis-table th,
+  .compact .analysis-table td {
+    @apply px-2 py-1;
+  }
+
+  .spacious .analysis-table th,
+  .spacious .analysis-table td {
+    @apply px-6 py-4;
+  }
+
+  /* Export button styles */
+  .export-btn {
+    @apply flex items-center px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-colors text-sm font-medium;
+  }
+
+  .action-controls {
+    @apply flex items-center gap-2;
+  }
+
+  /* Move Details Modal Styles */
+  .move-modal-overlay {
+    @apply fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4;
+  }
+
+  .move-modal {
+    @apply bg-white rounded-lg shadow-xl w-full max-w-2xl max-h-screen overflow-y-auto;
+  }
+
+  .move-modal-header {
+    @apply flex justify-between items-start p-6 border-b border-gray-200;
+  }
+
+  .move-title-section {
+    @apply flex-1;
+  }
+
+  .move-name {
+    @apply text-2xl font-bold text-gray-900 mb-2;
+  }
+
+  .move-type-badge {
+    @apply flex items-center gap-2;
+  }
+
+  .type-label {
+    @apply font-medium text-gray-700;
+  }
+
+  .close-modal-btn {
+    @apply p-2 text-gray-400 hover:text-gray-600 rounded-lg transition-colors;
+  }
+
+  .move-modal-content {
+    @apply p-6 space-y-6;
+  }
+
+  .move-stats-grid {
+    @apply grid grid-cols-2 md:grid-cols-4 gap-4;
+  }
+
+  .stat-card {
+    @apply bg-gray-50 p-4 rounded-lg text-center;
+  }
+
+  .stat-icon {
+    @apply w-6 h-6 mx-auto mb-2 text-gray-600;
+  }
+
+  .stat-value {
+    @apply text-xl font-bold text-gray-900;
+  }
+
+  .stat-label {
+    @apply text-sm text-gray-600 mt-1;
+  }
+
+  .section-title {
+    @apply text-lg font-semibold text-gray-900 mb-3;
+  }
+
+  .calculated-metrics {
+    @apply bg-blue-50 p-4 rounded-lg;
+  }
+
+  .metrics-grid {
+    @apply space-y-2;
+  }
+
+  .metric-item {
+    @apply flex justify-between items-center;
+  }
+
+  .metric-label {
+    @apply text-sm text-gray-700;
+  }
+
+  .metric-value {
+    @apply font-semibold text-blue-700;
+  }
+
+  .move-effects {
+    @apply bg-yellow-50 p-4 rounded-lg;
+  }
+
+  .effects-list {
+    @apply space-y-2;
+  }
+
+  .effect-item {
+    @apply flex items-start gap-2 text-sm text-gray-700;
+  }
+
+  .type-effectiveness {
+    @apply bg-green-50 p-4 rounded-lg;
+  }
+
+  .effectiveness-category {
+    @apply mb-4 last:mb-0;
+  }
+
+  .effectiveness-label {
+    @apply text-sm font-medium mb-2;
+  }
+
+  .effectiveness-label.weak {
+    @apply text-red-700;
+  }
+
+  .effectiveness-label.strong {
+    @apply text-green-700;
+  }
+
+  .effectiveness-label.immune {
+    @apply text-gray-700;
+  }
+
+  .type-list {
+    @apply flex flex-wrap gap-2;
+  }
+
+  .effectiveness-type {
+    @apply flex items-center gap-1 bg-white px-2 py-1 rounded text-xs;
+  }
+
+  .type-name {
+    @apply capitalize;
+  }
+
+  .multiplier {
+    @apply font-bold;
+  }
+
+  .multiplier.weak {
+    @apply text-red-600;
+  }
+
+  .multiplier.strong {
+    @apply text-green-600;
+  }
+
+  .multiplier.immune {
+    @apply text-gray-600;
+  }
+
+  .additional-info {
+    @apply bg-gray-50 p-4 rounded-lg;
+  }
+
+  .info-grid {
+    @apply space-y-2;
+  }
+
+  .info-item {
+    @apply flex justify-between items-center text-sm;
+  }
+
+  .info-label {
+    @apply text-gray-600;
+  }
+
+  .info-value {
+    @apply font-medium text-gray-900;
+  }
 } 

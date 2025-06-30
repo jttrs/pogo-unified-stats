@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Home, BarChart3, GitCompare, RefreshCw, ExternalLink, AlertCircle } from 'lucide-react'
+import { Home, BarChart3, Trophy, GitCompare, Users, RefreshCw, ExternalLink, AlertCircle } from 'lucide-react'
 import { useData } from '../context/DataContext'
 
 const Header = () => {
@@ -10,7 +10,10 @@ const Header = () => {
   const navItems = [
     { path: '/', label: 'Home', icon: Home },
     { path: '/rankings', label: 'Rankings', icon: BarChart3 },
-    { path: '/compare', label: 'Compare', icon: GitCompare }
+    { path: '/tier-rankings', label: 'Tier Rankings', icon: Trophy },
+    { path: '/compare', label: 'Compare', icon: GitCompare },
+    { path: '/team-builder', label: 'Team Builder', icon: Users },
+    { path: '/comprehensive', label: 'Analysis', icon: AlertCircle }
   ]
 
   const formatLastUpdated = (date) => {

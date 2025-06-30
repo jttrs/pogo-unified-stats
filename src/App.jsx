@@ -6,8 +6,12 @@ import SearchBar from './components/SearchBar'
 import PokemonCard from './components/PokemonCard'
 import HomePage from './pages/HomePage'
 import RankingsPage from './pages/RankingsPage'
+import TierRankingsPage from './pages/TierRankingsPage'
 import ComparisonPage from './pages/ComparisonPage'
 import PokemonDetailsPage from './pages/PokemonDetailsPage'
+import DatabasePage from './pages/DatabasePage'
+import ComprehensiveAnalysisPage from './pages/ComprehensiveAnalysisPage'
+import TeamBuilderPage from './pages/TeamBuilderPage'
 import { TrendingUp, Zap, Target } from 'lucide-react'
 
 // Error boundary component
@@ -62,8 +66,12 @@ function App() {
               <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/rankings" element={<RankingsPage />} />
+                <Route path="/tier-rankings" element={<TierRankingsPage />} />
                 <Route path="/compare" element={<ComparisonPage />} />
+                <Route path="/comprehensive" element={<ComprehensiveAnalysisPage />} />
+                <Route path="/team-builder" element={<TeamBuilderPage />} />
                 <Route path="/pokemon/:id" element={<PokemonDetailsPage />} />
+                <Route path="/database" element={<DatabasePage />} />
                 <Route path="*" element={<HomePage />} />
               </Routes>
             </div>

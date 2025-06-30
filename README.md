@@ -1,6 +1,6 @@
 # Pokemon GO Unified Stats
 
-A comprehensive web application that helps Pokemon GO players determine if their Pokemon are worth powering up by combining PVP rankings from PVPoke with raid effectiveness data inspired by DialGADex.
+A comprehensive web application that helps Pokemon GO players determine if their Pokemon are worth powering up by combining PVP rankings from PVPoke with raid effectiveness data inspired by DialgaDex.
 
 ![Pokemon GO Unified Stats](./preview.png)
 
@@ -34,8 +34,8 @@ A comprehensive web application that helps Pokemon GO players determine if their
 - Rankings for all competitive leagues (Great, Ultra, Master, Premier)
 - Automatically fetches latest meta updates
 
-### Live DialGADex Integration  
-- **Real-time raid effectiveness data** from [DialGADex.com](https://www.dialgadex.com)
+### Live DialgaDex Integration  
+- **Real-time raid effectiveness data** from [DialgaDex.com](https://www.dialgadex.com)
 - Pokemon effectiveness against different raid boss types using eDPS metrics
 - S+, S, A, B, C tier classifications across all Pokemon types
 - Automatically crawls type-specific rankings
@@ -172,7 +172,7 @@ We welcome contributions! Here's how you can help:
 ## Roadmap
 
 ### Short Term
-- [x] Integration with live DialGADex data scraping
+- [x] Integration with live DialgaDex data scraping
 - [x] Live PVPoke API integration
 - [ ] Enhanced error handling and offline mode
 - [ ] User accounts and Pokemon collection tracking
@@ -197,7 +197,7 @@ The app uses publicly available data for educational and analytical purposes. Al
 ## Acknowledgments
 
 - **PVPoke.com** - For comprehensive PVP ranking data
-- **DialGADex** - For inspiration on raid effectiveness analysis
+- **DialgaDex** - For inspiration on raid effectiveness analysis
 - **Pokemon GO Community** - For ongoing meta analysis and feedback
 - **Open Source Libraries** - React, Tailwind CSS, Recharts, and all dependencies
 
